@@ -28,7 +28,7 @@
     Save
     <button onclick="save()">Now</button>
   </div>
-  <form>
+  <form id="fam-form" action="#">
     <table id="fam-tree">
       <tr id="fam-h">
         <td>Row \<br> Column</td>
@@ -37,7 +37,7 @@
       </tr>
       <tr id="fam-r0">
         <td>1</td>
-        <td><input></td>
+        <td><input name="r0-c0"></td>
         <td><input></td>
       </tr>
       <tr id="fam-r1">
@@ -47,6 +47,7 @@
       </tr>
     </table>
   </form>
+  <button onclick="genFormObject()">Print Object</button>
 </body>
 
 </html>

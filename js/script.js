@@ -50,6 +50,14 @@ function removeCol() {
     }
 }
 
+// Generate the input data into an object
+function genFormObject() {
+    var famForm = document.getElementById("fam-form");
+    var formData = new FormData(famForm);
+    var formDataObject = Object.fromEntries(formData.entries());
+    console.log(formDataObject);
+}
+
 // Download Table as File
 function save() {
     let tableObject = {
@@ -63,6 +71,6 @@ function save() {
 // Code
 var rowCount = 2;
 var colCount = 2;
-var table = document.getElementById("fam-tree");
-var header = document.getElementById("fam-h");
-var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const table = document.getElementById("fam-tree");
+const header = document.getElementById("fam-h");
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
